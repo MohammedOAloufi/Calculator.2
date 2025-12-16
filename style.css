@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 5px;
+    
+}
+
+.gridContainer{
+    position: absolute;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: rgb(71, 75, 75);
+    padding: 10px;
+    padding-top: 140px;
+    border-radius: 24px
+}
+
+.screen{
+    position: relative;
+    height: 90px;
+    width: 330px;
+    padding-bottom: 10px;
+    z-index: 1;
+    top: -220px;
+    background: rgba(11, 255, 221, 0.55);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+}
+
+#display{
+    font-size: 38px;
+    color: black;
+}
+
+.equal{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 80px;
+    background-color: orange;
+    
+}
+
+button{
+    cursor: pointer;
+}
+
+
+.btn{
+    background-color: gray;
+    color: white;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10p;
+    border-radius: 18px;
+}
+
+.btn:active{
+    background-color: aqua;
+}
+
+.symbol{
+    font-size: 36px;
+    border-radius: 18px;
+    width: 100%;
+}
+
+@media (min-width: 360px){
+    body{
+        width: 100%;
+    }
+}
